@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyth Barros | Nutrição de Alta Performance</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Montserrat:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">Keyth Barros</div>
+        <nav class="nav">
+            <a href="#sobre">A Nutri</a>
+            <a href="#metodo">O Método</a>
+            <a href="#resultados">Resultados</a>
+            <a href="#planos">Programas</a>
+        </nav>
+        <a href="https://wa.me/5562993105041?text=Quero agendar uma consulta" class="btn-header">Agendar agora</a>
+    </header>
+
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <span class="tag">Saúde sem Neura</span>
+                <h1>Performance & <span>Consciência Alimentar</span></h1>
+                <p><br>O método definitivo para quem busca um corpo de elite sem abrir mão da liberdade e saúde mental.
+                </p><br><br>
+                <div class="hero-btns">
+                    <a href="https://wa.me/5562993105041?text=Quero agendar uma consulta" class="btn-primary">Quero
+                        minha consulta</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="img-wrapper">
+                    <img src="./assets/keythbarros.png" alt="Keyth Barros">
+                </div>
+                <div class="floating-badge">
+                    <strong>+3k</strong>
+                    <span>Vidas Transformadas</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="sobre">
+        <div class="sobre-inner">
+            <div class="sobre-text">
+
+                <h2 class="section-title">Quem é <span>Keyth Barros?</span></h2>
+                <div class="separator"></div>
+                <p>Nutricionista Clínica Esportiva e Analista Comportamental. Minha abordagem une a ciência da
+                    performance à psicologia da alimentação para resultados estéticos sem neura.</p>
+                <div class="specs-grid">
+                    <div class="spec-item"><i class="fas fa-dumbbell"></i> <span>Nutrição Esportiva</span></div>
+                    <div class="spec-item"><i class="fas fa-brain"></i> <span>Análise Comportamental</span></div>
+                    <div class="spec-item"><i class="fas fa-star"></i> <span>Criadora do Método SER</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="metodo" class="metodo">
+        <h2 class="section-title">O Método <span>SER</span></h2>
+        <div class="metodo-grid">
+            <div class="card-metodo">
+                <div class="icon-circle">S</div>
+                <h3>Saúde</h3>
+                <p>Equilíbrio bioquímico e base nutricional sólida.</p>
+            </div>
+            <div class="card-metodo">
+                <div class="icon-circle">E</div>
+                <h3>Equilíbrio</h3>
+                <p>Nutrição sem restrições severas ou ansiedade.</p>
+            </div>
+            <div class="card-metodo">
+                <div class="icon-circle">R</div>
+                <h3>Resultados</h3>
+                <p>Performance física e estética sustentável.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="resultados" class="resultados">
+        <h2 class="section-title">Resultados de Nossos <span>Pacientes</span></h2>
+        <div class="separator"></div>
+        <div class="depo-grid">
+            <div class="depo-card">
+                <div class="depo-img">
+                    <img src="./assets/mulher-um.jpg" alt="Resultado">
+                </div>
+                <div class="depo-text">
+                    <p>"Com a Keyth aprendi que não precisava passar fome para emagrecer. Perdi 8kg e minha disposição
+                        dobrou!"</p>
+                    <span>- Maria Silva</span>
+                </div>
+            </div>
+            <div class="depo-card">
+                <div class="depo-img">
+                    <img src="./assets/homem-um.jpg" alt="Resultado">
+                </div>
+                <div class="depo-text">
+                    <p>"O suporte diário do Método VIP foi o diferencial. Finalmente consegui manter a constância nos
+                        treinos."</p>
+                    <span>- João Pedro</span>
+                </div>
+            </div>
+            <div class="depo-card">
+                <div class="depo-img">
+                    <img src="./assets/mulher-dois.jpg" alt="Resultado">
+                </div>
+                <div class="depo-text">
+                    <p>"Pela primeira vez fiz um plano alimentar que se encaixa na minha rotina. Resultados estéticos
+                        sem neura!"</p>
+                    <span>- Ana Paula</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="planos" class="planos">
+        <div class="section-header">
+            <h2 class="section-title">Escolha seu <span>Protocolo</span></h2>
+
+        </div>
+
+        <div class="planos-grid">
+            <div class="plano-card" onclick="togglePlano(this)">
+                <div class="plano-header">
+                    <h3>Plano Start</h3>
+                    <div class="preco"><span>R$</span> 197</div>
+                    <i class="fas fa-chevron-down toggle-icon"></i>
+                </div>
+                <div class="plano-body">
+                    <ul>
+                        <li><i class="fas fa-check"></i> Consulta Única</li>
+                        <li><i class="fas fa-check"></i> Guia de Substituições</li>
+                        <li><i class="fas fa-check"></i> Plano Alimentar Básico</li>
+                    </ul>
+                    <a href="https://wa.me/5562993105041?text=Quero começar agora" class="btn-buy">Começar Agora</a>
+                </div>
+            </div>
+
+            <div class="plano-card featured" onclick="togglePlano(this)">
+                <div class="popular-tag">Mais Escolhido</div>
+                <div class="plano-header">
+                    <h3>Método SER VIP</h3>
+                    <div class="preco"><span>R$</span> 497</div>
+                    <i class="fas fa-chevron-down toggle-icon"></i>
+                </div>
+                <div class="plano-body">
+                    <ul>
+                        <li><i class="fas fa-check"></i> Acompanhamento Mensal</li>
+                        <li><i class="fas fa-check"></i> Suporte WhatsApp VIP</li>
+                        <li><i class="fas fa-check"></i> Análise Comportamental</li>
+                    </ul>
+                    <a href="https://wa.me/5562993105041?text=Quero ser VIP" class="btn-buy">Quero ser VIP</a>
+                </div>
+            </div>
+
+            <div class="plano-card" onclick="togglePlano(this)">
+                <div class="plano-header">
+                    <h3>Plano Premium</h3>
+                    <div class="preco"><span>R$</span> 897</div>
+                    <i class="fas fa-chevron-down toggle-icon"></i>
+                </div>
+                <div class="plano-body">
+                    <ul>
+                        <li><i class="fas fa-check"></i> Consultoria 24h</li>
+                        <li><i class="fas fa-check"></i> Suplementação Inclusa</li>
+                        <li><i class="fas fa-check"></i> Check-ins Semanais</li>
+                    </ul>
+                    <a href="https://wa.me/5562993105041?text=Quero ser Premium" class="btn-buy">Contratar Premium</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="logo-footer">Keyth Barros</div>
+                <p>Nutrição Clínica Esportiva e Analista Comportamental.</p>
+            </div>
+
+            <div class="footer-dev">
+                <span>Desenvolvido por:</span>
+                <a href="https://wa.me/393514840731?text=Olá! Vim através do site da Keyth Barros e gostaria de um orçamento para um projeto."
+                    target="_blank">
+                    <img src="./assets/logo_transparent.png" alt="FurlanDev Logo" class="dev-logo">
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Keyth Barros Nutrição. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+    <a href="https://wa.me/5562993105041?text=Quero agendar uma consulta" class="whatsapp-fixed" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+</body>
+
+</html>

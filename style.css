@@ -1,0 +1,680 @@
+:root {
+    --primary: #7a4632;
+    /* Terracota Profundo */
+    --accent: #a67c52;
+    /* Dourado Terroso */
+    --bg-light: #fdfaf8;
+    /* Off-white elegante */
+    --text-dark: #2d2d2d;
+    --transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: var(--bg-light);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+/* HEADER PREMIUM */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: rgba(255, 255, 255, 0.95);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: var(--primary);
+    font-weight: 700;
+    font-style: italic;
+}
+
+.nav a {
+    text-decoration: none;
+    color: var(--text-dark);
+    margin: 0 15px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
+.nav a:hover {
+    color: var(--primary);
+}
+
+.btn-header {
+    background: var(--primary);
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+/* HERO COM OVERLAPPING */
+.hero {
+    padding: 80px 8% 120px;
+    background: linear-gradient(135deg, #fdfaf8, #f4ece6);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-content {
+    flex: 1;
+    z-index: 2;
+}
+
+.tag {
+    background: var(--accent);
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.hero-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    color: var(--primary);
+    margin: 20px 0;
+    line-height: 1.1;
+}
+
+.hero-content h1 span {
+    display: block;
+    font-style: italic;
+    color: var(--accent);
+    font-weight: 400;
+}
+
+.hero-content p {
+    margin-bottom: 30px;
+}
+
+.hero-btns .btn-primary {
+    display: inline-block;
+    background: var(--primary);
+    color: #fff;
+    padding: 20px 45px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1rem;
+    box-shadow: 0 10px 30px rgba(122, 70, 50, 0.3);
+    transition: var(--transition);
+}
+
+.hero-btns .btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(122, 70, 50, 0.4);
+}
+
+.hero-image {
+    flex: 1;
+    position: relative;
+}
+
+.img-wrapper {
+    border-radius: 40px;
+    overflow: hidden;
+    border: 15px solid #fff;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.1);
+    transform: rotate(2deg);
+}
+
+.img-wrapper img {
+    width: 100%;
+    display: block;
+    transition: var(--transition);
+}
+
+.floating-badge {
+    position: absolute;
+    bottom: -30px;
+    left: -30px;
+    background: #fff;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transform: rotate(-5deg);
+    z-index: 5;
+}
+
+.floating-badge strong {
+    font-size: 2rem;
+    color: var(--primary);
+    display: block;
+}
+
+/* SOBRE (CLEAN & ELEGANT) */
+.sobre {
+    padding: 100px 8%;
+    background: var(--primary);
+    color: #fff;
+    position: relative;
+}
+
+.sobre-inner {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.section-title span {
+    font-style: italic;
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+.separator {
+    width: 60px;
+    height: 3px;
+    background: var(--accent);
+    margin: 0 auto 30px;
+}
+
+.sobre p {
+    font-size: 1.3rem;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.specs-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.spec-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 15px 30px;
+    border-radius: 100px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.spec-item i {
+    color: var(--accent);
+    font-size: 1.2rem;
+}
+
+/* MÉTODO SER */
+.metodo {
+    padding: 100px 8%;
+    text-align: center;
+    background: #fff;
+}
+
+.metodo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.card-metodo {
+    background: #f4ece6;
+    padding: 50px 30px;
+    border-radius: 30px;
+    transition: var(--transition);
+}
+
+.card-metodo:hover {
+    background: #fff;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.05);
+    transform: translateY(-10px);
+}
+
+.icon-circle {
+    width: 70px;
+    height: 70px;
+    background: var(--primary);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+/* DEPOIMENTOS (NOVA SEÇÃO) */
+.depoimentos {
+    padding: 100px 8%;
+    background: #fff;
+    text-align: center;
+}
+
+.depo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.depo-card {
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+    background: var(--bg-light);
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+    transition: var(--transition);
+}
+
+.depo-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
+}
+
+.depo-img img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.depo-text {
+    padding: 30px;
+}
+
+.depo-text p {
+    font-style: italic;
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.depo-text span {
+    font-weight: 700;
+    color: var(--primary);
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
+/* PLANOS ACCORDION STYLE */
+.planos {
+    padding: 100px 8% 150px;
+    background: var(--bg-light);
+}
+
+.planos-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 800px;
+    margin: 60px auto 0;
+}
+
+.plano-card {
+    background: #fff;
+    border-radius: 25px;
+    border: 2px solid transparent;
+    transition: var(--transition);
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+}
+
+.plano-card:hover {
+    border-color: var(--accent);
+}
+
+.plano-card.featured {
+    border: 2px solid var(--primary);
+    background: #fffcfb;
+    position: relative;
+}
+
+.popular-tag {
+    position: absolute;
+    top: 0;
+    right: 40px;
+    background: var(--primary);
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 0 0 15px 15px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.plano-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 40px;
+}
+
+.plano-header h3 {
+    font-size: 1.6rem;
+    color: var(--primary);
+}
+
+.preco {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.preco span {
+    font-size: 1rem;
+    vertical-align: middle;
+    margin-right: 5px;
+    opacity: 0.5;
+}
+
+.plano-body {
+    max-height: 0;
+    opacity: 0;
+    padding: 0 40px;
+    transition: var(--transition);
+}
+
+.plano-card.active .plano-body {
+    max-height: 500px;
+    opacity: 1;
+    padding-bottom: 40px;
+}
+
+.plano-card.active .toggle-icon {
+    transform: rotate(180deg);
+    color: var(--primary);
+}
+
+.plano-body ul {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.plano-body li {
+    padding: 12px 0;
+    border-bottom: 1px solid #f4f4f4;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-weight: 600;
+}
+
+.plano-body li i {
+    color: var(--accent);
+}
+
+.btn-buy {
+    display: block;
+    background: var(--primary);
+    color: #fff;
+    text-align: center;
+    padding: 18px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: var(--transition);
+}
+
+.btn-buy:hover {
+    background: var(--accent);
+    transform: scale(1.02);
+}
+
+/* --- FOOTER ATUALIZADO --- */
+.footer {
+    background-color: #8c4b35;
+    /* Cor terracota do container 'Sobre' */
+    color: #ffffff;
+    padding: 60px 8% 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 40px;
+}
+
+.footer-brand .logo-footer {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.footer-brand p {
+    font-size: 0.95rem;
+    opacity: 0.8;
+}
+
+.footer-dev {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-dev span {
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.7;
+}
+
+.dev-logo {
+    height: 150px;
+    /* Ajuste conforme necessário */
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.dev-logo:hover {
+    transform: scale(1.1);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 0.85rem;
+    opacity: 0.6;
+}
+
+/* --- ADICIONE AQUI (ANTES DO @MEDIA) --- */
+.whatsapp-fixed {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-fixed:hover {
+    transform: scale(1.1);
+}
+
+/* Ajuste Responsivo */
+/* --- AJUSTES DE RESPONSIVIDADE UNIFICADOS --- */
+@media (max-width: 768px) {
+
+    /* 1. AJUSTE DO CABEÇALHO (HEADER) */
+    .header {
+        padding: 15px 5%;
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .nav a {
+        margin: 0 8px;
+        font-size: 0.85rem;
+    }
+
+    .btn-header {
+        width: 80%;
+        /* Botão de agendar mais visível no mobile */
+        text-align: center;
+    }
+
+    /* 2. AJUSTE DO BANNER PRINCIPAL (HERO) */
+    .hero {
+        padding: 40px 5% 60px;
+        text-align: center;
+    }
+
+    .hero-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.4rem;
+        /* Diminui para não encavalar as letras */
+        line-height: 1.2;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    /* 3. AJUSTE DOS BOTÕES PRINCIPAIS */
+    .hero-btns {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .btn-primary {
+        width: 100%;
+        /* Botão largo para facilitar o toque no celular */
+        padding: 18px;
+        font-size: 1rem;
+    }
+
+    /* 4. AJUSTE DA IMAGEM E BADGE */
+    .hero-image {
+        order: -1;
+        /* Foto aparece antes do texto no celular */
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .img-wrapper {
+        border-width: 8px;
+        /* Borda branca mais fina no mobile */
+    }
+
+    .floating-badge {
+        bottom: -20px;
+        left: 50%;
+        transform: translateX(-50%) rotate(0);
+        /* Centraliza o selo de +3k */
+        padding: 15px;
+        min-width: 150px;
+    }
+
+    /* 5. AJUSTE DOS PLANOS (ACCORDION) */
+    .plano-header {
+        padding: 25px 20px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .preco {
+        font-size: 1.8rem;
+    }
+
+    /* 6. AJUSTE DO FOOTER (O QUE VOCÊ JÁ TINHA) */
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .footer-brand .logo-footer {
+        font-size: 1.8rem;
+    }
+
+    .dev-logo {
+        height: 150px;
+        width: auto;
+        /* Logo FurlanDev um pouco menor no mobile */
+    }
+
+    /* --- ADICIONE ESTE PEDAÇO DENTRO DO SEU @MEDIA EXISTENTE --- */
+    .whatsapp-fixed {
+        width: 50px;
+        height: 50px;
+        font-size: 25px;
+        bottom: 15px;
+        right: 15px;
+    }
+}
