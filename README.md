@@ -41,11 +41,11 @@ O projeto foi construído utilizando as melhores práticas de desenvolvimento We
 
 ---
 
-## 📦 Como rodar o projeto
+## 📦 Como ver o projeto
 
-1. **Clone este repositório:**
-   ```bash
-   git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/seu-usuario/seu-repositorio.git)
+<p align="center">
+  🚀 <b><a href="https://aleksander-furlan.github.io/Keyth-Barros/">CLIQUE AQUI PARA VER O SITE ONLINE</a></b>
+</p>
 
    ## 📱 Demonstração Visual
 
