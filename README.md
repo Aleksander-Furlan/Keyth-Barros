@@ -50,5 +50,5 @@ O projeto foi construído utilizando as melhores práticas de desenvolvimento We
    ## 📱 Demonstração Visual
 
 <p align="center">
-  <img src="./assets/preview.png" alt="Demonstração do Projeto no Monitor e Celular" width="100%">
+  <img src="./assets/preview.png" alt="Demonstração do Projeto no Monitor e Celular" width="30%">
 </p>
